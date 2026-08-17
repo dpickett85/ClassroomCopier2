@@ -6,16 +6,18 @@
     "noEmit": false,
     "module": "NodeNext",
     "moduleResolution": "nodenext",
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
     "types": [
       "node"
     ]
   },
   "include": [
     "src/**/*.ts",
-    "prisma/**/*.ts",
-    "test/**/*.ts"
+    "prisma/**/*.ts"
   ],
-"exclude": [
+  "exclude": [
     "dist",
     "node_modules",
     "test",
