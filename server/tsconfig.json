@@ -8,6 +8,7 @@
     "moduleResolution": "nodenext",
     "strict": false,
     "noImplicitAny": false,
+    "useUnknownInCatchVariables": false,
     "skipLibCheck": true,
     "types": [
       "node"
