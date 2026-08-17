@@ -355,8 +355,7 @@ export class MockClassroomProvider implements ClassroomProvider {
     })
     const byId = new Map(rows.map((r) => [r.id, r.driveState as HealthState]))
     for (const ref of refs) {
-      result.set(attachmentRefKey(ref), byId.get(ref.id) ?? 'deleted')
-    }
+result.set(attachmentRefKey(ref), (byId.get(ref.id) ?? 'deleted') as any)    }
     return result
   }
 
