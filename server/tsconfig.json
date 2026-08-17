@@ -15,8 +15,11 @@
     "prisma/**/*.ts",
     "test/**/*.ts"
   ],
-  "exclude": [
+"exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "test",
+    "**/*.test.ts",
+    "**/*.spec.ts"
   ]
 }
