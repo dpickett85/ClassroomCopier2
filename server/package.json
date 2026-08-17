@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
-    "start": "node --env-file-if-exists=.env dist/server/src/index.js",
+    "start": "node --env-file-if-exists=.env dist/src/index.js"
     "build": "tsc -p tsconfig.json",
     "db:push": "prisma db push --skip-generate && prisma generate",
     "db:reset": "prisma db push --force-reset --skip-generate && prisma generate",
